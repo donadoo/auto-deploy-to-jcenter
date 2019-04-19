@@ -29,7 +29,7 @@ deploy:
     secure: "${GH_TOKEN}"
   file: mylibrary/build/outputs/aar/mylibrary-debug.aar
   skip_cleanup: true
-#  on:
+  on:
 #    tags: true
-#    all_branches: true
+    all_branches: true
 #    repo: donadoo/auto-deploy
