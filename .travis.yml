@@ -23,12 +23,12 @@ before_install:
 - yes | sdkmanager "platforms;android-27"
 scripts:
 - "./gradlew clean build bintrayUpload -PbintrayUser=donadoo -PbintrayKey=f244f033fcff1dec9204ba47bc041e37d9ea34e0 -PdryRun=false"
-#deploy:
-#  provider: releases
-#  api_key:
-#    secure: "${GH_TOKEN}"
-#  file: mylibrary/build/outputs/aar/mylibrary-debug.aar
-#  skip_cleanup: true
+deploy:
+  provider: releases
+  api_key:
+    secure: "${GH_TOKEN}"
+  file: mylibrary/build/outputs/aar/mylibrary-debug.aar
+  skip_cleanup: true
 #  on:
 #    tags: true
 #    all_branches: true

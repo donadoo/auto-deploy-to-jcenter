@@ -33,7 +33,7 @@ publish {
     userOrg = 'donadoo'
     groupId = 'com.donadoo'
     artifactId = 'auto-deploy2'
-    publishVersion = '1.0.4'
+    publishVersion = '1.0.5'
     desc = 'This is a auto-deploy library'
     website = 'https://github.com/donadoo/auto-deploy'
 }
